@@ -1,18 +1,18 @@
+import Image from 'next/image'
 
 import Link from 'next/link'
 import { MainLayout } from '../../components/layout/MainLayout'
-import Image from 'next/image'
 
-export default function Home() {
+
+export default function ContactPage() {
   return (
-   
+    
     <MainLayout>
-      
-      <h1>Home</h1>
+              <h1>Contact Page</h1>
         <div className={'description'}>
           <p>
             Get started by editing&nbsp;
-            <code className={'code'}>src/pages/index.js</code>
+            <code className={'code'}>src/pages/contact</code>
           </p>
           <div>
             <a
@@ -45,12 +45,8 @@ export default function Home() {
         </div>
 
         <div className={'grid'}>
-          
-          <Link href='/about'> <h2><b> Ir al About </b></h2> </Link>
-    
-     
-        </div>
+          <Link href='/'><h2> <b>Ir al Home </b></h2></Link>
+        </div>      
     </MainLayout>
-
   )
 }

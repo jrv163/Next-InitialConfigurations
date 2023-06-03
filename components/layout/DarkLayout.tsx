@@ -1,6 +1,8 @@
+import React from "react";
+
 
 // los layout son unos HOC, por tal razón llevan los children
-export const DarkLayout = ({ children }) => {
+export const DarkLayout = ({ children }: {children: React.ReactNode}) => {
   return (
     <div style={{ 
         backgroundColor: 'rgba(0,0,0,0.3)',

@@ -3,6 +3,7 @@ import { MainLayout } from "../../components/layout/MainLayout";
 
 import Link from "next/link";
 import { DarkLayout } from "../../components/layout/DarkLayout";
+import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal, PromiseLikeOfReactNode } from "react";
 
 export default function AboutPage() {
   return (
@@ -50,7 +51,7 @@ export default function AboutPage() {
   )
 }
 
-AboutPage.getLayout = function getLayout ( page ){
+AboutPage.getLayout = function getLayout ( page: JSX.Element ){
   return (
       <MainLayout>
         <DarkLayout>
